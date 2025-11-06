@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harshini S - Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:"Poppins",sans-serif}
+    body{background:#0f1724;color:#e6eef6;scroll-behavior:smooth}
+    header{position:fixed;top:0;width:100%;background:#0b1220;padding:20px 40px;display:flex;justify-content:space-between;align-items:center;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,0.4)}
+    header h1{color:#06b6d4;font-size:1.5rem}
+    nav a{color:#e6eef6;margin-left:20px;text-decoration:none;font-weight:600;transition:.3s}
+    nav a:hover{color:#06b6d4}
+    section{min-height:100vh;padding:100px 10%}
+    h2{color:#06b6d4;margin-bottom:20px}
+    p{color:#cbd5e1;line-height:1.6}
+    .home{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:30px}
+    .home img{
+      width:300px;
+      height:360px;
+      border-radius:20px; /* rectangle with smooth edges */
+      object-fit:cover;
+      border:4px solid #06b6d4;
+      box-shadow:0 4px 20px rgba(0,0,0,0.5);
+    }
+    .intro{max-width:600px}
+    .intro h2{font-size:2rem;margin-bottom:10px}
+    .btn{display:inline-block;background:#06b6d4;color:#021223;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}
+    .education,.skills-grid,.projects,.certificates,.achievements{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+    .card{background:rgba(255,255,255,0.05);padding:20px;border-radius:10px}
+    .card h3{color:#06b6d4;margin-bottom:10px}
+    .skill{background:rgba(255,255,255,0.1);padding:8px 14px;border-radius:999px;font-size:0.9rem;display:inline-block;color:#94a3b8}
+    .skills-grid{display:flex;flex-wrap:wrap;gap:10px}
+    .project img,.certificate img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-bottom:10px}
+    footer{text-align:center;padding:20px;background:#0b1220;color:#94a3b8}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HARSHINI S</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <!-- Replace harshini.jpg with your actual image -->
+    <img src="imagepink.jpeg" alt="Harshini Photo">
+    <div class="intro">
+      <h2>Hello, I'm <span style="color:#06b6d4;">Harshini S</span></h2>
+      <p>I'm a passionate Java Full Stack Developer skilled in building responsive web applications using modern frameworks. Eager to apply innovative solutions and <br>grow in a dynamic environment.</p>
+      <a href="#about" class="btn">Know More</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Harshini S, currently pursuing Electronics and Communication Engineering at M. Kumarasamy College of Engineering. I’m passionate about full stack web development, combining creativity and logic to build impactful digital experiences. With strong skills in Java, HTML, CSS, JavaScript, and MySQL, I aim to develop innovative and efficient solutions while continuously expanding my knowledge in modern technologies.</p>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="education">
+      <div class="card">
+        <h3>Bachelor of Electronics and Communication Engineering</h3>
+        <p>M. Kumarasamy College of Engineering (2022 – 2026)</p>
+        <p>CGPA: 8.22</p>
+      </div>
+      <div class="card">
+        <h3>Higher Secondary Certificate</h3>
+        <p>Government Girls Higher Secondary School (2021 – 2022)</p>
+        <p>Percentage: 73.5%</p>
+      </div>
+      <div class="card">
+        <h3>Secondary School Leaving Certificate
+</h3>
+        <p>Angel Vidhya Mandir Matric Higher Secondary School (2019 – 2020)</p>
+        <p>Percentage: 83.2%</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <h3>Technical Skills</h3>
+    <br>
+    <div class="skills-grid">
+      
+      <div class="skill">Java</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">MySQL</div>
+      <div class="skill">Digital Electronics</div>
+    </div>
+    <br>
+    <h3>Soft Skills</h3>
+    <br>
+    <div class="skills-grid">
+      <div class="skill">Communication</div>
+      <div class="skill">Team Collaboration</div>
+      
+      <div class="skill">Adaptability</div>
+      <div class="skill">Time Management</div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card project">
+        <img src="project1.jpeg" alt="Project 1">
+        <h3>Harnessing Energy From Non-Biodegradable Waste for a Sustainable Future Using IoT</h3>
+        <p>Developed an IoT-based project that harnesses energy from non-biodegradable waste, reducing landfill usage and supporting sustainable energy generation.</p>
+      </div>
+      <div class="card project">
+        <img src="project2.jpeg" alt="Project 2">
+        <h3>Smart Water Flow Control System</h3>
+        <p>Designed a system to monitor and control water flow using sensors and microcontrollers to minimize wastage and promote sustainable usage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates -->
+  <section id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificates">
+      <div class="card certificate">
+        <img src="java.jpeg" alt="Java Certificate">
+        <h3>Java Programming for Beginners</h3>
+        <p>Issued by SkillUp</p>
+      </div>
+      <div class="card certificate">
+        <img src="iot.jpg" alt="IoT Certificate">
+        <h3>Introduction to Internet of Things</h3>
+        <p>Issued by NPTEL</p>
+      </div>
+      <div class="card certificate">
+        <img src="network.jpg" alt="CCNA Certificate">
+        <h3>CCNA V7 - Introduction to Networks</h3>
+        <p>Issued by Cisco</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievements">
+      <div class="card">
+        <h3>IEEE Paper Publication</h3>
+        <p>Published a paper on “Harnessing Energy From Non-Biodegradable Waste for a Sustainable Future Using IoT” in Rohini College of Engineering.</p>
+      </div>
+      <div class="card">
+        <h3>Verilog Design Course</h3>
+        <p>Completed “Digital System Using Verilog (2024)” course by Taras Systems & Solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Typewriting</h3>
+        <p>Achieved First Class with Distinction in Junior & Senior Grade Typewriting (English).</p>
+      </div>
+      <div class="card">
+        <h3>STEP Plus Test</h3>
+        <p>Scored 7 (B2 grade) in Upper-Intermediate level English proficiency.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>🖂Email: <a href="mailto:harshinisuresh1974@gmail.com" style="color:#06b6d4;">harshinisuresh1974@gmail.com</a></p>
+    <p>📞Phone: <a href="tel:+919677454239" style="color:#06b6d4;">+91 96774 54239</a></p>
+    <p>🐱GitHub: <a href="https://github.com/Harshini281" style="color:#06b6d4;">github.com/Harshini281</a></p>
+    <p>🔗LinkedIn: <a href="https://linkedin.com/in/harshini-suresh-9773ab25a" style="color:#06b6d4;">linkedin.com/in/harshini-suresh-9773ab25a</a></p>
+  </section>
+
+  <footer>
+    © 2025 Harshini S — All Rights Reserved
+  </footer>
+</body>
+</html>
